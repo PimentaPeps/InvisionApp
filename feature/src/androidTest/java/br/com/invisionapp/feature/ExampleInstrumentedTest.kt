@@ -1,4 +1,4 @@
-package invisionapp.com.br.invisionapp.feature
+package br.com.invisionapp.feature
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getTargetContext()
-        assertEquals("invisionapp.com.br.invisionapp.feature.test", appContext.packageName)
+        assertEquals("br.com.invisionapp.feature.test", appContext.packageName)
     }
 }

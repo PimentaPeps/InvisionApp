@@ -1,18 +1,19 @@
 apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
 
 android {
     compileSdkVersion 26
-    
+
 
 
     defaultConfig {
-        applicationId "invisionapp.com.br.invisionapp"
+        applicationId "br.com.invisionapp"
         minSdkVersion 23
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
-
-
     }
 
     buildTypes {
@@ -27,4 +28,10 @@ android {
 dependencies {
     implementation project(':feature')
     implementation project(':base')
+
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
 }
