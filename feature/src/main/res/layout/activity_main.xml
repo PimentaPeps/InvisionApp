@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
+    tools:context="br.com.invisionapp.mvvm.MainActivity"
     tools:openDrawer="start">
 
     <include
@@ -22,4 +23,8 @@
         app:headerLayout="@layout/nav_header_main"
         app:menu="@menu/activity_main_drawer" />
 
+    <FrameLayout
+        android:id="@+id/frag_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </android.support.v4.widget.DrawerLayout>

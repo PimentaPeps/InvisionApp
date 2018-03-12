@@ -6,6 +6,6 @@ import retrofit2.http.GET
 
 interface UserApi {
 
-    @GET("6de6abfedb24f889e0b5f675edc50deb?fmt=raw&sole")
+    @GET("https://invisionapp-f2994.firebaseio.com/.json")
     fun getUsers(): Observable<List<User>>
 }

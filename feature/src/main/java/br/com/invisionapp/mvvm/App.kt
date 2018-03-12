@@ -42,7 +42,7 @@ class App : Application() {
 
         userApi = retrofit.create(UserApi::class.java)
         appDatabase = Room.databaseBuilder(applicationContext,
-                AppDatabase::class.java, "mvvm-database").build()
+                AppDatabase::class.java, "mvvm-database.db").build()
 
         userRepository = UserRepository(userApi, appDatabase.userDao())
         userListViewModel = UserListViewModel(userRepository)
